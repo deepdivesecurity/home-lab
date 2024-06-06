@@ -6,7 +6,7 @@ This repo contains detailed information about my technical projects, including c
 2. [Network Architecture](#network-architecture)
 3. [Home Lab Architecture](#home-lab-architecture)
 4. [Smart Home Automation](#smart-home-automation)
-5. [Security Cameras](#security-cameras)
+5. [Security Cameras & NVR](#security-cameras-and-nvr)
 
 
 ## Introduction
@@ -67,8 +67,10 @@ At the time of this push, there are 2 WiFi SSIDs as follows:
 ### Setup
 
 ### Automations
-- Before morning routine
-  - Turn AC on for 30min before morning routine
+- Turn AC On Morning routine
+  - Starter: In the morning at a specific time
+  - Action(s):
+    - Turn AC on for 30min
 - Morning routine
   - Starter: In the morning at a specific time
   - Action(s):
@@ -77,7 +79,17 @@ At the time of this push, there are 2 WiFi SSIDs as follows:
     - Play my news sources
     - Turn on and gradually increase the brightness of my bedroom light
     - Turn bedroom light off in 30min
-- Run robot vacuum
-  - Run full robot vacuum cycle every 3rd day of the week
+- Run robot vacuum routine
+  - Starter: Every 3rd day of the week at a specific time
+  - Action(s):
+    - Run full robot vacuum cycle
+- Where are the Utensils
+  - Starter: When someone asks where are the utensils
+  - Action(s):
+    - Announce to household where the utensils are located
+- Where is the Garbage and/or Recyclables
+  - Starter: When someone asks where the garbage, where the recyclables, or a combination of the two
+  - Action(s):
+    - Announce to the household where the garbage and recyclables are
 
-## Security Cameras
+## Security Cameras and NVR
