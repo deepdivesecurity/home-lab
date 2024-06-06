@@ -45,6 +45,7 @@ At the time of this push, there are 2 WiFi SSIDs as follows:
 - Guest network
   - Allows for guests to connect directly to the Guest VLAN
   - Secured w/ WPA-2/WPA-3
+  - For quality-of-life improvements, I've generated a QR code and placed it by my router which allows guests to connect to the guest network without having to know the password
 
 ### Firewall Rules
 
