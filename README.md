@@ -24,7 +24,7 @@ Note. IP addresses omitted.
 - Internet service provider (ISP) provided modem
 - Ubiquiti router/switch
 
-### Segmentation
+### Network Settings and Segmentation
 In my home network, I've opted for 5 virtual local area networks (VLANs) to support segmentation of devices as follows: 
 - VLAN1: Personal devices (Trusted zone)
 - VLAN20: Guest devices (Untrusted zone)
@@ -37,9 +37,13 @@ In my home network, I've opted for 5 virtual local area networks (VLANs) to supp
   - Allow internet access: disabled
 - VLAN50: Home Lab (Semi-trusted zone)
 
-At the time of this push, there are 2 SSIDs as follows: 
-- Main network: Uses private pre-shared keys (PPSKs) to connect devices to their specific VLAN
-- Guest network: Allows for guests to connect directly to the Guest VLAN
+At the time of this push, there are 2 WiFi SSIDs as follows: 
+- Main network
+  - Secured w/ WPA-2 to allow for the use of private pre-shared keys (PPSKs)
+  - Uses PPSKs to connect devices to their applicable VLAN
+- Guest network
+  - Allows for guests to connect directly to the Guest VLAN
+  - Secured w/ WPA-2/WPA-3
 
 ### Firewall Rules
 
