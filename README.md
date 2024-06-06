@@ -13,7 +13,7 @@ This repo contains detailed information about my technical projects, including c
 This repo showcases my integrated home network, lab, security, and automation setup. This is meant to document my network for personal use, highlight my technical expertise across various domains, and represent my dedication to continued learning. The various domains covered are: 
 1. Network Architecture: Designed for high performance and security with segmented VLANs, custom firewall rules, and automated VLAN device assignment
 2. Home Lab Architecture: A versatile lab environment featuring a server with Proxmox VE virtualization, extensive NAS storage, and diverse network configurations for technical projects and experimentation
-3. Security Cameras & NVR: A security system integrated with multiple IP cameras feeding a centralized NVR over RTSP for comprehensive monitoring and secure access without internet exposure
+3. Security Cameras & Network Video Recorder (NVR): A security system integrated with multiple IP cameras feeding a centralized NVR over RTSP for comprehensive monitoring and secure access without internet exposure
 4. Smart Home Automation: Enhanced convenience through integrated smart devices and platforms for automating tasks and allowing for seamless control.
 
 ## Network Architecture
@@ -53,7 +53,7 @@ In my home network, I've opted for 5 virtual local area networks (VLANs) to supp
     - Isolate network: enabled
 - VLAN40: Cameras
   - Zone: Semi-trusted zone
-  - Devices: IP cameras
+  - Devices: IP cameras; NVR
   - Configurations: 
     - Isolate network: enabled
     - Allow internet access: disabled [(M1035)](https://attack.mitre.org/mitigations/M1035/)
@@ -92,7 +92,7 @@ The UniFi management user account must have multi-factor authentication (MFA) en
 
 
 ### Hardware
-- Synology NAS/Network video recorder (NVR)
+- Synology NAS/NVR
   - Multiple WD Red Plus HDDs in RAID1 configuration for data redundancy
 - 1..n HP EliteDesk Mini PCs
   - 1 Running Proxmox VE
@@ -103,6 +103,10 @@ Enabling my IP cameras to feed into my NVR offers various personal value benefit
 - Improved security: By sending my IP camera feeds to my NVR over my LAN, I'm able to disable internet connectivity for my IP cameras
 - Continuous recording: Without an NVR, my IP cameras lose their recordings in the event of an internet outage
 - Reduced network load: IP camera feeds would be processed locally, reducing bandwidth load on the network
+
+### Hardware
+- 1..3 IP cameras
+- Synology NAS/NVR
 
 ## Smart Home Automation
 ### Value Proposition
