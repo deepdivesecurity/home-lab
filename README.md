@@ -96,36 +96,36 @@ States: Match State Established; Match State Related <br />
 
 <details>
   <summary>Rule 2</summary>
-Rule Name: Drop Invalid State  
-Type: LAN In  
-Action: Drop  
-Source: Any  
-Port: Any  
-Destination: Any  
-Port: Any  
-States: Match State Invalid  
+Rule Name: Drop Invalid State <br />
+Type: LAN In <br />
+Action: Drop <br />
+Source: Any <br />
+Port: Any <br />
+Destination: Any <br />
+Port: Any <br />
+States: Match State Invalid <br />
 </details>
 
 <details>
   <summary>Rule 3</summary>
-Rule Name: Allow LAN to Anywhere  
-Type: LAN In  
-Action: Accept  
-Source: VLAN1  
-Port: Any  
-Destination: RFC1918 Port/IP Group  
-Port: Any  
+Rule Name: Allow LAN to Anywhere <br />
+Type: LAN In <br />
+Action: Accept <br />
+Source: VLAN1 <br />
+Port: Any <br />
+Destination: RFC1918 Port/IP Group <br />
+Port: Any <br />
 </details>
 
 <details>
   <summary>Rule 4</summary>
-Rule Name: Block inter-VLAN Traffic  
-Type: LAN In  
-Action: Drop  
-Source: RFC1918 Port/IP Group  
-Port: Any  
-Destination: RFC1918 Port/IP Group  
-Port: Any  
+Rule Name: Block inter-VLAN Traffic <br />
+Type: LAN In <br />
+Action: Drop <br />
+Source: RFC1918 Port/IP Group <br />
+Port: Any <br />
+Destination: RFC1918 Port/IP Group <br />
+Port: Any <br />
 </details>
 
 ### Backup & Recovery
