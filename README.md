@@ -5,8 +5,8 @@ This repo contains detailed information about my technical projects, including c
 1. [Introduction](#introduction)
 2. [Network Architecture](#network-architecture)
 3. [Home Lab Architecture](#home-lab-architecture)
-4. [Smart Home Automation](#smart-home-automation)
-5. [Security Cameras & NVR](#security-cameras-and-nvr)
+4. [Security Cameras & NVR](#security-cameras-and-nvr)
+5. [Smart Home Automation](#smart-home-automation)
 
 
 ## Introduction
@@ -15,6 +15,7 @@ This repo contains detailed information about my technical projects, including c
 ## Network Architecture
 ### Diagram
 **Figure 1.**
+
 *Baseline home network diagram*
 ![Baseline home network diagram](/assets/images/Baseline_H_Network.png)
 Note. IP addresses omitted.
@@ -40,7 +41,7 @@ In my home network, I've opted for 5 virtual local area networks (VLANs) to supp
 At the time of this push, there are 2 WiFi SSIDs as follows: 
 - Main network
   - Secured w/ WPA-2 to allow for the use of private pre-shared keys (PPSKs)
-  - Uses PPSKs to connect devices to their applicable VLAN
+  - Uses PPSKs to connect devices to their applicable VLAN (not including VLAN20: Guest devices)
 - Guest network
   - Allows for guests to connect directly to the Guest VLAN
   - Secured w/ WPA-2/WPA-3
@@ -54,6 +55,8 @@ At the time of this push, there are 2 WiFi SSIDs as follows:
   - Multiple WD Red Plus HDDs in RAID1 configuration for data redundancy
 - 1..n HP EliteDesk Mini PCs
   - 1 Running Proxmox VE
+ 
+## Security Cameras and NVR
 
 ## Smart Home Automation
 ### Hardware
@@ -91,5 +94,3 @@ At the time of this push, there are 2 WiFi SSIDs as follows:
   - Starter: When someone asks where the garbage, where the recyclables, or a combination of the two
   - Action(s):
     - Announce to the household where the garbage and recyclables are
-
-## Security Cameras and NVR
