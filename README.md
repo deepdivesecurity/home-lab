@@ -35,7 +35,7 @@ Note. IP addresses omitted.
 - Untrusted Zone: Contains devices with the lowest level of trust, primarily guest devices and IoT devices which may contain many vulnerabilities and no security controls.
 
 #### VLANs & Segmentation
-In my home network, I've opted for 5 virtual local area networks (VLANs) to support segmentation of devices [(M1030)](https://attack.mitre.org/mitigations/M1030/) as follows: 
+In my home network, I've opted for 5 virtual local area networks (VLANs) to support segmentation of devices [(M1030)](https://attack.mitre.org/mitigations/M1030/) as follows: <br />
 Table 1. <br />
 *VLANs*
 | VLAN  | Network Zone | Devices | Configurations |
