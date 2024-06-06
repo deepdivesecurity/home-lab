@@ -30,6 +30,12 @@ Note. IP addresses omitted.
 - Ubiquiti router/switch
 
 ### Network Zoning and Segmentation
+#### Network Zones
+- Trusted Zone: Contains critical and personal devices with the highest security requirements
+- Semi-trusted Zone: Contains devices with moderate security requirements. These devices are important, but may have some vulnerabilities or limited security controls.
+- Untrusted Zone: Contains devices with the lowest level of trust, primarily guest devices and IoT devices which may contain many vulnerabilities and no security controls.
+
+#### VLANs & Segmentation
 In my home network, I've opted for 5 virtual local area networks (VLANs) to support segmentation of devices [(M1030)](https://attack.mitre.org/mitigations/M1030/) as follows: 
 - VLAN1: Personal devices
   - Zone: Trusted zone
@@ -53,7 +59,7 @@ In my home network, I've opted for 5 virtual local area networks (VLANs) to supp
     - Allow internet access: disabled [(M1035)](https://attack.mitre.org/mitigations/M1035/)
 - VLAN50: Home Lab
   - Zone: Semi-trusted zone
-  - Devices: Mini-PC servers; NAS; etc.
+  - Devices: Mini-PC servers; network attached storage (NAS); etc.
 
 ### WiFi
 At the time of this push, there are 2 WiFi SSIDs as follows: 
@@ -73,10 +79,12 @@ The password policy for the PPSKs/networks is as follows [(M1027)](https://attac
 - At least 1 number
 - At least 1 special character
 
-### IAM
+### Identity & Access Management (IAM)
 The UniFi management user account must have multi-factor authentication (MFA) enabled [(M1032)](https://attack.mitre.org/mitigations/M1032/)
 
 ### Firewall Rules
+
+### Backup & Recovery
 
 
 ## Home Lab Architecture
@@ -84,7 +92,7 @@ The UniFi management user account must have multi-factor authentication (MFA) en
 
 
 ### Hardware
-- Synology Network attached storage (NAS)/Network video recorder (NVR)
+- Synology NAS/Network video recorder (NVR)
   - Multiple WD Red Plus HDDs in RAID1 configuration for data redundancy
 - 1..n HP EliteDesk Mini PCs
   - 1 Running Proxmox VE
