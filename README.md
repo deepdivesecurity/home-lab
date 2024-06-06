@@ -11,6 +11,7 @@ This repo contains detailed information about my technical projects, including c
 
 ## Network Architecture
 ### Diagram
+
 **Figure 1.**
 *Baseline home network diagram*
 ![Baseline home network diagram](/assets/images/Baseline_H_Network.png)
