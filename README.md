@@ -18,8 +18,7 @@ This repo showcases my integrated home network, lab, security, and automation se
 
 ## Network Architecture
 ### Diagram
-**Figure 1.**
-
+**Figure 1.** <br />
 *Baseline home network diagram*
 ![Baseline home network diagram](/assets/images/Baseline_H_Network.png)
 Note. IP addresses omitted.
@@ -85,14 +84,14 @@ The UniFi management user account must have multi-factor authentication (MFA) en
 ### Firewall Rules
 <details>
   <summary>Rule 1</summary>
-Rule Name: Allow Established and Related Connections  
-Type: LAN In  
-Action: Accept  
-Source: Any  
-Port: Any  
-Destination: Any  
-Port: Any  
-States: Match State Established; Match State Related  
+Rule Name: Allow Established and Related Connections <br />
+Type: LAN In <br />
+Action: Accept <br />
+Source: Any <br />
+Port: Any <br />
+Destination: Any <br />
+Port: Any <br />
+States: Match State Established; Match State Related <br />
 </details>
 
 <details>
