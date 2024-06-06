@@ -10,7 +10,11 @@ This repo contains detailed information about my technical projects, including c
 
 
 ## Introduction
-
+This repo showcases my integrated home network, lab, security, and automation setup. This is meant to document my network for personal use, highlight my technical expertise across various domains, and represent my dedication to continued learning. The various domains covered are: 
+1. Network Architecture: Designed for high performance and security with segmented VLANs, custom firewall rules, and automated VLAN device assignment
+2. Home Lab Architecture: A versatile lab environment featuring a server with Proxmox VE virtualization, extensive NAS storage, and diverse network configurations for technical projects and experimentation
+3. Security Cameras & NVR: A security system integrated with multiple IP cameras feeding a centralized NVR over RTSP for comprehensive monitoring and secure access without internet exposure
+4. Smart Home Automation: Enhanced convenience through integrated smart devices and platforms for automating tasks and allowing for seamless control.
 
 ## Network Architecture
 ### Diagram
@@ -87,8 +91,8 @@ The password policy for the PPSKs/networks is as follows:
   - Action(s):
     - Adjust smart hub media volume;
     - Tell me the weather;
-    - Play my news sources
-    - Turn on and gradually increase the brightness of my bedroom light
+    - Play my news sources;
+    - Turn on and gradually increase the brightness of my bedroom light;
     - Turn bedroom light off in 30min
 - Run robot vacuum routine
   - Starter: Every 3rd day of the week at a specific time
