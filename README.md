@@ -3,7 +3,10 @@ This repo contains detailed information about my technical projects, including c
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Network Architecture](#network-architecture
+2. [Network Architecture](#network-architecture)
+3. [Home Lab Architecture](#home-lab-architecture)
+4. [Smart Home Automation](#smart-home-automation)
+5. [Security Cameras](#security-cameras)
 
 
 ## Introduction
@@ -11,7 +14,6 @@ This repo contains detailed information about my technical projects, including c
 
 ## Network Architecture
 ### Diagram
-
 **Figure 1.**
 *Baseline home network diagram*
 ![Baseline home network diagram](/assets/images/Baseline_H_Network.png)
@@ -20,7 +22,7 @@ Note. IP addresses omitted.
 ### Hardware
 - Cyberpower UPS for power redundancy
 - ISP provided modem
-- Ubiquiti Router/Switch
+- Ubiquiti router/switch
 
 ### Segmentation
 In my home network, I've opted for 5 virtual local area networks (VLANs) to support segmentation of devices as follows: 
@@ -43,16 +45,35 @@ At the time of this push, there are 2 SSIDs as follows:
 
 
 ## Home Lab Architecture
-Synology NAS/NVR
-WD Red Plus HDDs (Data redundancy)
-HP EliteDesk Mini PC
+### Hardware
+- Synology NAS/NVR
+  - Multiple WD Red Plus HDDs in RAID1 configuration for data redundancy
+- 1..n HP EliteDesk Mini PCs
+  - 1 Running Proxmox VE
 
 ## Smart Home Automation
-Smart Hubs
-Smart Doorbell
-Smart Robot Vacuum
-Smart Lights
-Smart Plugs
-Smart TVs
+### Hardware
+- 1..2 Smart hubs
+- 1 Smart doorbell
+- 1 Smart robot vacuum
+- 1..n Smart lights
+- 1..n Matter-enabled smart plugs
+- 1..2 Smart TVs
 
-## Security Cameras w/ NVR
+### Setup
+
+### Automations
+- Before morning routine
+  - Turn AC on for 30min before morning routine
+- Morning routine
+  - Starter: In the morning at a specific time
+  - Action(s):
+    - Adjust smart hub media volume;
+    - Tell me the weather;
+    - Play my news sources
+    - Turn on and gradually increase the brightness of my bedroom light
+    - Turn bedroom light off in 30min
+- Run robot vacuum
+  - Run full robot vacuum cycle every 3rd day of the week
+
+## Security Cameras
