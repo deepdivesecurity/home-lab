@@ -85,48 +85,48 @@ The UniFi management user account must have multi-factor authentication (MFA) en
 ### Firewall Rules
 <details>
   <summary>Rule 1</summary>
-Rule Name: Allow Established and Related Connections
-Type: LAN In
-Action: Accept
-Source: Any
-Port: Any
-Destination: Any
-Port: Any
-States: Match State Established; Match State Related
+Rule Name: Allow Established and Related Connections  
+Type: LAN In  
+Action: Accept  
+Source: Any  
+Port: Any  
+Destination: Any  
+Port: Any  
+States: Match State Established; Match State Related  
 </details>
 
 <details>
   <summary>Rule 2</summary>
-Rule Name: Drop Invalid State
-Type: LAN In
-Action: Drop
-Source: Any
-Port: Any
-Destination: Any
-Port: Any
-States: Match State Invalid
+Rule Name: Drop Invalid State  
+Type: LAN In  
+Action: Drop  
+Source: Any  
+Port: Any  
+Destination: Any  
+Port: Any  
+States: Match State Invalid  
 </details>
 
 <details>
   <summary>Rule 3</summary>
-Rule Name: Allow LAN to Anywhere
-Type: LAN In
-Action: Accept
-Source: VLAN1
-Port: Any
-Destination: RFC1918 Port/IP Group
-Port: Any
+Rule Name: Allow LAN to Anywhere  
+Type: LAN In  
+Action: Accept  
+Source: VLAN1  
+Port: Any  
+Destination: RFC1918 Port/IP Group  
+Port: Any  
 </details>
 
 <details>
   <summary>Rule 4</summary>
-Rule Name: Block inter-VLAN Traffic
-Type: LAN In
-Action: Drop
-Source: RFC1918 Port/IP Group
-Port: Any
-Destination: RFC1918 Port/IP Group
-Port: Any
+Rule Name: Block inter-VLAN Traffic  
+Type: LAN In  
+Action: Drop  
+Source: RFC1918 Port/IP Group  
+Port: Any  
+Destination: RFC1918 Port/IP Group  
+Port: Any  
 </details>
 
 ### Backup & Recovery
