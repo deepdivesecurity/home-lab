@@ -20,8 +20,8 @@ This repo contains detailed information about my technical projects, including c
 Note. IP addresses omitted.
 
 ### Hardware
-- Cyberpower UPS for power redundancy
-- ISP provided modem
+- Cyberpower uninterruptable power supply (UPS) for power redundancy
+- Internet service provider (ISP) provided modem
 - Ubiquiti router/switch
 
 ### Segmentation
@@ -46,7 +46,7 @@ At the time of this push, there are 2 SSIDs as follows:
 
 ## Home Lab Architecture
 ### Hardware
-- Synology NAS/NVR
+- Synology Network attached storage (NAS)/Network video recorder (NVR)
   - Multiple WD Red Plus HDDs in RAID1 configuration for data redundancy
 - 1..n HP EliteDesk Mini PCs
   - 1 Running Proxmox VE
