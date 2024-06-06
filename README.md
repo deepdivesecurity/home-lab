@@ -117,6 +117,11 @@ Enabling my IP cameras to feed into my NVR offers various personal value benefit
 - 1..2 Smart TVs
 
 ### Setup
+At the time of this push, all devices are integrated with Google Home for centralized management. Research/Testing is ongoing to see if a self-hosted instance of Home Assistant meets my requirements.
+- The 1..2 smart hubs are matter-enabled hubs for controlling matter-enabled IoT devices
+
+#### Issues
+- The smart hubs can't talk with the smart TVs. This is likely due to incompatibility for 1 TV (not running Android) and using a different Google account for the Android TV. More research/testing is required.
 
 ### Automations
 - Turn AC On Morning routine
