@@ -29,18 +29,31 @@ Note. IP addresses omitted.
 - Internet service provider (ISP) provided modem
 - Ubiquiti router/switch
 
-### Network Settings and Segmentation
+### Network Zoning and Segmentation
 In my home network, I've opted for 5 virtual local area networks (VLANs) to support segmentation of devices [(M1030)](https://attack.mitre.org/mitigations/M1030/) as follows: 
-- VLAN1: Personal devices (Trusted zone)
-- VLAN20: Guest devices (Untrusted zone)
-  - Guest network: enabled
-  - Client device isolation: enabled
-- VLAN30: IoT devices (Untrusted zone)
-  - Isolate network: enabled
-- VLAN40: Cameras (Semi-trusted zone)
-  - Isolate network: enabled
-  - Allow internet access: disabled [(M1035)](https://attack.mitre.org/mitigations/M1035/)
-- VLAN50: Home Lab (Semi-trusted zone)
+- VLAN1: Personal devices
+  - Zone: Trusted zone
+  - Devices: Personal computers & smartphones
+- VLAN20: Guest devices
+  - Zone: Untrusted zone
+  - Devices: Guests' laptops, phones, and other devices
+  - Configurations:
+    - Guest network: enabled
+    - Client device isolation: enabled
+- VLAN30: IoT devices
+  - Zone: Untrusted zone
+  - Devices: Smart TVs; smart hubs; smart plugs; smart lights; etc.
+  - Configurations:
+    - Isolate network: enabled
+- VLAN40: Cameras
+  - Zone: Semi-trusted zone
+  - Devices: IP cameras
+  - Configurations: 
+    - Isolate network: enabled
+    - Allow internet access: disabled [(M1035)](https://attack.mitre.org/mitigations/M1035/)
+- VLAN50: Home Lab
+  - Zone: Semi-trusted zone
+  - Devices: Mini-PC servers; NAS; etc.
 
 At the time of this push, there are 2 WiFi SSIDs as follows: 
 - Main network
