@@ -83,6 +83,8 @@ The password policy for the PPSKs/networks is as follows [(M1027)](https://attac
 The UniFi management user account must have multi-factor authentication (MFA) enabled [(M1032)](https://attack.mitre.org/mitigations/M1032/)
 
 ### Firewall Rules
+<details>
+  <summary>Rule 1</summary>
 Rule Name: Allow Established and Related Connections
 Type: LAN In
 Action: Accept
@@ -91,7 +93,10 @@ Port: Any
 Destination: Any
 Port: Any
 States: Match State Established; Match State Related
+</details>
 
+<details>
+  <summary>Rule 2</summary>
 Rule Name: Drop Invalid State
 Type: LAN In
 Action: Drop
@@ -100,7 +105,10 @@ Port: Any
 Destination: Any
 Port: Any
 States: Match State Invalid
+</details>
 
+<details>
+  <summary>Rule 3</summary>
 Rule Name: Allow LAN to Anywhere
 Type: LAN In
 Action: Accept
@@ -108,7 +116,10 @@ Source: VLAN1
 Port: Any
 Destination: RFC1918 Port/IP Group
 Port: Any
+</details>
 
+<details>
+  <summary>Rule 4</summary>
 Rule Name: Block inter-VLAN Traffic
 Type: LAN In
 Action: Drop
@@ -116,6 +127,7 @@ Source: RFC1918 Port/IP Group
 Port: Any
 Destination: RFC1918 Port/IP Group
 Port: Any
+</details>
 
 ### Backup & Recovery
 
