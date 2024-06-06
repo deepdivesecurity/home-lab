@@ -30,7 +30,7 @@ Note. IP addresses omitted.
 - Ubiquiti router/switch
 
 ### Network Settings and Segmentation
-In my home network, I've opted for 5 virtual local area networks (VLANs) to support segmentation of devices [https://attack.mitre.org/mitigations/M1030/]((M1030)) as follows: 
+In my home network, I've opted for 5 virtual local area networks (VLANs) to support segmentation of devices [(M1030)](https://attack.mitre.org/mitigations/M1030/) as follows: 
 - VLAN1: Personal devices (Trusted zone)
 - VLAN20: Guest devices (Untrusted zone)
   - Guest network: enabled
@@ -39,26 +39,26 @@ In my home network, I've opted for 5 virtual local area networks (VLANs) to supp
   - Isolate network: enabled
 - VLAN40: Cameras (Semi-trusted zone)
   - Isolate network: enabled
-  - Allow internet access: disabled [https://attack.mitre.org/mitigations/M1035/]((M1035))
+  - Allow internet access: disabled [(M1035)](https://attack.mitre.org/mitigations/M1035/)
 - VLAN50: Home Lab (Semi-trusted zone)
 
 At the time of this push, there are 2 WiFi SSIDs as follows: 
 - Main network
-  - Secured w/ WPA-2 to allow for the use of private pre-shared keys (PPSKs) [https://attack.mitre.org/mitigations/M1041/]((M1041))
+  - Secured w/ WPA-2 to allow for the use of private pre-shared keys (PPSKs) [(M1041)](https://attack.mitre.org/mitigations/M1041/)
   - Uses PPSKs to connect devices to their applicable VLAN (not including VLAN20: Guest devices)
 - Guest network
   - Allows for guests to connect directly to the Guest VLAN
-  - Secured w/ WPA-2/WPA-3 [https://attack.mitre.org/mitigations/M1041/]((M1041))
+  - Secured w/ WPA-2/WPA-3 [(M1041)](https://attack.mitre.org/mitigations/M1041/)
   - For quality-of-life improvements, I've generated a QR code and placed it by my router which allows guests to connect to the guest network without having to know the password
 
-The password policy for the PPSKs/networks is as follows [https://attack.mitre.org/mitigations/M1027/]((M1027)):
+The password policy for the PPSKs/networks is as follows [(M1027)](https://attack.mitre.org/mitigations/M1027/)
 - Password length minimum: 20
 - At least 1 capital letter
 - At least 1 lower case letter
 - At least 1 number
 - At least 1 special character
 
-The UniFi management user account must have multi-factor authentication (MFA) enabled ([https://attack.mitre.org/mitigations/M1032/](M1032))
+The UniFi management user account must have multi-factor authentication (MFA) enabled [(M1032)](https://attack.mitre.org/mitigations/M1032/)
 
 ### Firewall Rules
 
