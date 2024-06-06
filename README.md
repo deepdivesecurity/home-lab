@@ -55,6 +55,7 @@ In my home network, I've opted for 5 virtual local area networks (VLANs) to supp
   - Zone: Semi-trusted zone
   - Devices: Mini-PC servers; NAS; etc.
 
+### WiFi
 At the time of this push, there are 2 WiFi SSIDs as follows: 
 - Main network
   - Secured w/ WPA-2 to allow for the use of private pre-shared keys (PPSKs) [(M1041)](https://attack.mitre.org/mitigations/M1041/)
@@ -64,6 +65,7 @@ At the time of this push, there are 2 WiFi SSIDs as follows:
   - Secured w/ WPA-2/WPA-3 [(M1041)](https://attack.mitre.org/mitigations/M1041/)
   - For quality-of-life improvements, I've generated a QR code and placed it by my router which allows guests to connect to the guest network without having to know the password
 
+### Password Policy
 The password policy for the PPSKs/networks is as follows [(M1027)](https://attack.mitre.org/mitigations/M1027/)
 - Password length minimum: 20
 - At least 1 capital letter
@@ -71,6 +73,7 @@ The password policy for the PPSKs/networks is as follows [(M1027)](https://attac
 - At least 1 number
 - At least 1 special character
 
+### IAM
 The UniFi management user account must have multi-factor authentication (MFA) enabled [(M1032)](https://attack.mitre.org/mitigations/M1032/)
 
 ### Firewall Rules
