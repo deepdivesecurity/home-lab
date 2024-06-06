@@ -36,29 +36,15 @@ Note. IP addresses omitted.
 
 #### VLANs & Segmentation
 In my home network, I've opted for 5 virtual local area networks (VLANs) to support segmentation of devices [(M1030)](https://attack.mitre.org/mitigations/M1030/) as follows: 
-- VLAN1: Personal devices
-  - Zone: Trusted zone
-  - Devices: Personal computers & smartphones
-- VLAN20: Guest devices
-  - Zone: Untrusted zone
-  - Devices: Guests' laptops, phones, and other devices
-  - Configurations:
-    - Guest network: enabled
-    - Client device isolation: enabled
-- VLAN30: IoT devices
-  - Zone: Untrusted zone
-  - Devices: Smart TVs; smart hubs; smart plugs; smart lights; etc.
-  - Configurations:
-    - Isolate network: enabled
-- VLAN40: Cameras
-  - Zone: Semi-trusted zone
-  - Devices: IP cameras; NVR
-  - Configurations: 
-    - Isolate network: enabled
-    - Allow internet access: disabled [(M1035)](https://attack.mitre.org/mitigations/M1035/)
-- VLAN50: Home Lab
-  - Zone: Semi-trusted zone
-  - Devices: Mini-PC servers; network attached storage (NAS); etc.
+Table 1. <br />
+*VLANs*
+| VLAN  | Network Zone | Devices | Configurations |
+| ------------- | ------------- | ------------- | ------------- |
+| VLAN1: Personal Devices  | Trusted zone  | Personal computers & smartphones | --- |
+| VLAN20: Guest Devices  | Untrusted zone  | Guests' laptops, smartphones, & other devices | Guest network: enabled <br />Client device isolation: enabled |
+| VLAN30: IoT Devices  | Untrusted zone  | Smart TVs; smart hubs; smart plugs; smart lights; etc. | Isolate network: enabled |
+| VLAN40: Cameras  | Semi-trusted zone  | IP cameras; NVR | Isolate network: enabled <br />Allow internet access: disabled [(M1035)](https://attack.mitre.org/mitigations/M1035/) |
+| VLAN50: Home Lab  | Semi-trusted zone  | Mini-PC servers; network attached storage (NAS); etc. | --- |
 
 ### WiFi
 At the time of this push, there are 2 WiFi SSIDs as follows: 
