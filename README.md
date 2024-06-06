@@ -64,6 +64,9 @@ The UniFi management user account must have multi-factor authentication (MFA) en
 
 
 ## Home Lab Architecture
+### Value Proposition
+
+
 ### Hardware
 - Synology Network attached storage (NAS)/Network video recorder (NVR)
   - Multiple WD Red Plus HDDs in RAID1 configuration for data redundancy
@@ -71,8 +74,16 @@ The UniFi management user account must have multi-factor authentication (MFA) en
   - 1 Running Proxmox VE
  
 ## Security Cameras and NVR
+### Value Proposition
+Enabling my IP cameras to feed into my NVR offers various personal value benefits including but not limited to: 
+- Improved security: By sending my IP camera feeds to my NVR over my LAN, I'm able to disable internet connectivity for my IP cameras
+- Continuous recording: Without an NVR, my IP cameras lose their recordings in the event of an internet outage
+- Reduced network load: IP camera feeds would be processed locally, reducing bandwidth load on the network
 
 ## Smart Home Automation
+### Value Proposition
+
+
 ### Hardware
 - 1..2 Smart hubs
 - 1 Smart doorbell
