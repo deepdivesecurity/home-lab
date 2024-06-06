@@ -32,7 +32,7 @@ In my home network, I've opted for 5 virtual local area networks (VLANs) to supp
   - Client device isolation: enabled
 - VLAN30: IoT devices (Untrusted zone)
   - Isolate network: enabled
-- VLAN40: Cameras (Trusted zone)
+- VLAN40: Cameras (Semi-trusted zone)
   - Isolate network: enabled
   - Allow internet access: disabled
 - VLAN50: Home Lab (Semi-trusted zone)
