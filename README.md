@@ -58,6 +58,8 @@ The password policy for the PPSKs/networks is as follows:
 - At least 1 number
 - At least 1 special character
 
+The UniFi management user account must have multi-factor authentication (MFA) enabled
+
 ### Firewall Rules
 
 
