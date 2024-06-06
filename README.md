@@ -47,6 +47,13 @@ At the time of this push, there are 2 WiFi SSIDs as follows:
   - Secured w/ WPA-2/WPA-3
   - For quality-of-life improvements, I've generated a QR code and placed it by my router which allows guests to connect to the guest network without having to know the password
 
+The password policy for the PPSKs/networks is as follows:
+- Password length minimum: 20
+- At least 1 capital letter
+- At least 1 lower case letter
+- At least 1 number
+- At least 1 special character
+
 ### Firewall Rules
 
 
