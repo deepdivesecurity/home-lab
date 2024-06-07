@@ -169,7 +169,6 @@ At the time of this push, all devices are integrated with Google Home for centra
 <details>
   <summary>Morning Routine</summary>
   
-  - Morning routine
   - Starter: In the morning at a specific time
   - Action(s):
     - Adjust smart hub media volume;
