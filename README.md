@@ -158,10 +158,11 @@ At the time of this push, all devices are integrated with Google Home for centra
 - The smart hubs can't talk with the smart TVs. This is likely due to incompatibility for 1 TV (not running Android) and using a different Google account for the Android TV. More research/testing is required.
 
 ### Automations
-- <details><summary>Turn AC On Morning Routine</summary>
-- Starter: In the morning at a specific time
-- Action(s):
-  - Turn AC on for 30min
+<details>
+  <summary>Turn AC On Morning Routine</summary>
+  - Starter: In the morning at a specific time
+  - Action(s):
+    - Turn AC on for 30min
 </details>
 - Morning routine
   - Starter: In the morning at a specific time
