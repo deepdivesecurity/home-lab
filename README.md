@@ -8,7 +8,6 @@ This repo contains detailed information about my technical projects, including c
 4. [Security Cameras & NVR](#security-cameras-and-nvr)
 5. [Smart Home Automation](#smart-home-automation)
 
-
 ## Introduction
 This repo showcases my integrated home network, lab, security, and automation setup. This is meant to document my network for personal use, highlight my technical expertise across various domains, and represent my dedication to continued learning. The various domains covered are: 
 1. Network Architecture: Designed for high performance and security with segmented VLANs, custom firewall rules, and automated VLAN device assignment
@@ -115,11 +114,12 @@ Port: Any <br />
 </details>
 
 ### Backup & Recovery
-
+#### Automated Backups
+For my network, I'm using the UniFi Controller automated system config backup solution on a weekly basis.
 
 ## Home Lab Architecture
 ### Value Proposition
-
+The value of my home lab is that it creates an environment for me to conduct practical, hands-on learning engagements to experiment and conduct proof of concepts/value (PoC/PoV). This also facilitates home automation and quality of life improvement projects.
 
 ### Hardware
 - Synology NAS/NVR
@@ -140,7 +140,7 @@ Enabling my IP cameras to feed into my NVR offers various personal value benefit
 
 ## Smart Home Automation
 ### Value Proposition
-
+The main value of my smart home automation and overall IoT setup is an improved quality of life. By automating mundane tasks, my schedule is freed up to engage in more important priorities. This setup also facilitates managing my home while away, monitoring utility usage, and provides a learning opportunity for setting up integrations & automations.
 
 ### Hardware
 - 1..2 Smart hubs
