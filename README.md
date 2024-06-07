@@ -160,11 +160,16 @@ At the time of this push, all devices are integrated with Google Home for centra
 ### Automations
 <details>
   <summary>Turn AC On Morning Routine</summary>
+  
   - Starter: In the morning at a specific time
   - Action(s):
     - Turn AC on for 30min
 </details>
-- Morning routine
+
+<details>
+  <summary>Morning Routine</summary>
+  
+  - Morning routine
   - Starter: In the morning at a specific time
   - Action(s):
     - Adjust smart hub media volume;
@@ -172,15 +177,28 @@ At the time of this push, all devices are integrated with Google Home for centra
     - Play my news sources;
     - Turn on and gradually increase the brightness of my bedroom light;
     - Turn bedroom light off in 30min
-- Run robot vacuum routine
+</details>
+
+<details>
+  <summary>Run Robot Vacuum Routine</summary>
+
   - Starter: Every 3rd day of the week at a specific time
   - Action(s):
-    - Run full robot vacuum cycle
-- Where are the Utensils
+    - Run full robot vacuum cycle 
+</details>
+
+<details>
+  <summary>Where are the Utensils? Routine</summary>
+  
   - Starter: When someone asks where are the utensils
   - Action(s):
     - Announce to household where the utensils are located
-- Where is the Garbage and/or Recyclables
+</details>
+
+<details>
+  <summary>Where is the Garbage and/or Recyclables Routine</summary>
+  
   - Starter: When someone asks where the garbage, where the recyclables, or a combination of the two
   - Action(s):
     - Announce to the household where the garbage and recyclables are
+</details>
