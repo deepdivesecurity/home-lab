@@ -159,8 +159,8 @@ At the time of this push, all devices are integrated with Google Home for centra
 
 ### Automations
 - <details><summary>Turn AC On Morning Routine</summary>
-  - Starter: In the morning at a specific time
-  - Action(s):
+  - Starter: In the morning at a specific time<br />
+  - Action(s): <br />
     - Turn AC on for 30min</details>
 - Morning routine
   - Starter: In the morning at a specific time
