@@ -124,8 +124,63 @@ The value of my home lab is that it creates an environment for me to conduct pra
 ### Hardware
 - Synology NAS/NVR
   - Multiple WD Red Plus HDDs in RAID1 configuration for data redundancy
+  - Upgraded RAM
 - 1..n HP EliteDesk Mini PCs
   - 1 Running Proxmox VE
+ 
+### Synology NAS Configuration
+#### IAM
+- Default admin account disabled
+- Default guest account disabled
+- New admin account created with MFA
+- New regular user account user1 w/ access to shared folder created
+- Password policy:
+  - 
+
+#### Storage Pool/Volume
+- RAID1 w/ 2 WD RED Plus HDDs in the pool
+- Data scrubbing every 6 months
+
+#### Shared Folder
+- Location: Volume 1, btrfs, encrypted
+- Hidden from users without permissions
+- user1 provided access
+**Figure 2.** <br />
+*Shared files folder configuration*
+![Shared files folder configuration](/assets/images/shared_files_folder.png)
+
+#### Snapshots
+- Downloaded and installed Snapshot Replication
+- Setup daily snapshots on the shared folder mentioned above with a retention of 7 days
+**Figure 3.** <br />
+*Snapshot configuration*
+![Snapshot configuration](/assets/images/snapshot_configuration.png)
+
+#### UPS
+- Connected my UPS to the NAS for power redundancy and safe shutdown to prevent data loss
+**Figure 4.** <br />
+*UPS configuration*
+![UPS configuration](/assets/images/ups_settings.png)
+
+#### Security
+- Enabled DoS protection
+- Configured auto block
+- Enabled account protection
+- Enabled redirect HTTP to HTTPS
+- Changed default HTTP/HTTPS ports
+- etc.
+**Figure 5.** <br />
+*Trusted advisor*
+![Trusted advisor results](/assets/images/trusted_advisor.png)
+
+##### Firewall Rules
+<details>
+  <summary>Rule 1</summary>
+Ports: All <br />
+Protocol: All <br />
+Source IP: All <br />
+Action: Deny <br />
+</details>
  
 ## Security Cameras and NVR
 ### Value Proposition
