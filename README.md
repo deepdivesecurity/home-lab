@@ -176,7 +176,7 @@ The value of my home lab is that it creates an environment for me to conduct pra
 - Enabled redirect HTTP to HTTPS
 - Changed default HTTP/HTTPS ports
 - etc.
-<br />
+
 **Figure 5.** <br />
 *Security advisor*
 ![Security advisor results](/assets/images/security_advisor.png)
