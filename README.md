@@ -135,7 +135,11 @@ The value of my home lab is that it creates an environment for me to conduct pra
 - New admin account created with MFA
 - New regular user account user1 w/ access to shared folder created
 - Password policy:
-  - 
+  - Exclude name and description of user from password
+  - Include mixed case
+  - Include numeric characters
+  - Include special characters
+  - Minimal password length: 12
 
 #### Storage Pool/Volume
 - RAID1 w/ 2 WD RED Plus HDDs in the pool
