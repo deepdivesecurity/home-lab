@@ -133,7 +133,7 @@ The value of my home lab is that it creates an environment for me to conduct pra
 - Default admin account disabled
 - Default guest account disabled
 - New admin account created with MFA
-- New regular user account user1 w/ access to shared folder created
+- New regular user account, user1, w/ access to shared folder created
 - Password policy:
   - Exclude name and description of user from password
   - Include mixed case
@@ -144,6 +144,10 @@ The value of my home lab is that it creates an environment for me to conduct pra
 #### Storage Pool/Volume
 - RAID1 w/ 2 WD RED Plus HDDs in the pool
 - Data scrubbing every 6 months
+
+#### Backup & Disaster Recovery
+- Currently following the 3-2-1 backup strategy
+  - 3 copies of data on 2 different media with 1 copy off-site for disaster recovery
 
 #### Shared Folder
 - Location: Volume 1, btrfs, encrypted
