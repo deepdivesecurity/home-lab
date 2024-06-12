@@ -178,8 +178,8 @@ The value of my home lab is that it creates an environment for me to conduct pra
 - etc.
 <br />
 **Figure 5.** <br />
-*Trusted advisor*
-![Trusted advisor results](/assets/images/trusted_advisor.png)
+*Security advisor*
+![Security advisor results](/assets/images/security_advisor.png)
 
 ##### Firewall Rules
 <details>
