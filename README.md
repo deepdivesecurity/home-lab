@@ -184,6 +184,22 @@ The value of my home lab is that it creates an environment for me to conduct pra
 ##### Firewall Rules
 <details>
   <summary>Rule 1</summary>
+Ports: DSM (HTTPS) <br />
+Protocol: TCP <br />
+Source IP: VLAN1 <br />
+Action: Allow <br />
+</details>
+
+<details>
+  <summary>Rule 2</summary>
+Ports: 445 <br />
+Protocol: TCP <br />
+Source IP: VLAN1, VLAN50 <br />
+Action: Allow <br />
+</details>
+
+<details>
+  <summary>Rule 3</summary>
 Ports: All <br />
 Protocol: All <br />
 Source IP: All <br />
