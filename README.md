@@ -148,20 +148,23 @@ The value of my home lab is that it creates an environment for me to conduct pra
 #### Shared Folder
 - Location: Volume 1, btrfs, encrypted
 - Hidden from users without permissions
-- user1 provided access
+- user1 provided access <br />
+
 **Figure 2.** <br />
 *Shared files folder configuration*
 ![Shared files folder configuration](/assets/images/shared_files_folder.png)
 
 #### Snapshots
 - Downloaded and installed Snapshot Replication
-- Setup daily snapshots on the shared folder mentioned above with a retention of 7 days
+- Setup daily snapshots on the shared folder mentioned above with a retention of 7 days <br />
+
 **Figure 3.** <br />
 *Snapshot configuration*
 ![Snapshot configuration](/assets/images/snapshot_configuration.png)
 
 #### UPS
-- Connected my UPS to the NAS for power redundancy and safe shutdown to prevent data loss
+- Connected my UPS to the NAS for power redundancy and safe shutdown to prevent data loss <br />
+
 **Figure 4.** <br />
 *UPS configuration*
 ![UPS configuration](/assets/images/ups_settings.png)
@@ -173,6 +176,7 @@ The value of my home lab is that it creates an environment for me to conduct pra
 - Enabled redirect HTTP to HTTPS
 - Changed default HTTP/HTTPS ports
 - etc.
+<br />
 **Figure 5.** <br />
 *Trusted advisor*
 ![Trusted advisor results](/assets/images/trusted_advisor.png)
