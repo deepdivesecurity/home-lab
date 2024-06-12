@@ -166,7 +166,7 @@ The value of my home lab is that it creates an environment for me to conduct pra
 - Connected my UPS to the NAS for power redundancy and safe shutdown to prevent data loss <br />
 
 **Figure 4.** <br />
-*UPS configuration*
+*UPS configuration* <br />
 ![UPS configuration](/assets/images/ups_settings.png)
 
 #### Security
