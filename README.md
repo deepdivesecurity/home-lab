@@ -134,7 +134,7 @@ The value of my home lab is that it creates an environment for me to conduct pra
 - Default guest account disabled
 - New admin account created with MFA
 - New regular user account, user1, w/ access to shared folder created
-- Password policy:
+- Password policy [(M1027)](https://attack.mitre.org/mitigations/M1027/):
   - Exclude name and description of user from password
   - Include mixed case
   - Include numeric characters
@@ -146,11 +146,11 @@ The value of my home lab is that it creates an environment for me to conduct pra
 - Data scrubbing every 6 months
 
 #### Backup & Disaster Recovery
-- Currently following the 3-2-1 backup strategy
+- Currently following the 3-2-1 backup strategy [(M1053)](https://attack.mitre.org/mitigations/M1053/)
   - 3 copies of data on 2 different media with 1 copy off-site for disaster recovery
 
 #### Shared Folder
-- Location: Volume 1, btrfs, encrypted
+- Location: Volume 1, btrfs, encrypted [(M1041)](https://attack.mitre.org/mitigations/M1041/)
 - Hidden from users without permissions
 - user1 provided access <br />
 
@@ -175,9 +175,9 @@ The value of my home lab is that it creates an environment for me to conduct pra
 
 #### Security
 - Enabled DoS protection
-- Configured auto block
+- Configured auto block [(M1036)](https://attack.mitre.org/mitigations/M1036/)
 - Enabled account protection
-- Enabled redirect HTTP to HTTPS
+- Enabled redirect HTTP to HTTPS [(M1041)](https://attack.mitre.org/mitigations/M1041/)
 - Changed default HTTP/HTTPS ports
 - etc.
 
