@@ -66,9 +66,9 @@ The password policy for the PPSKs/networks is as follows [(M1027)](https://attac
 ### Identity & Access Management (IAM)
 The UniFi management user account must have multi-factor authentication (MFA) enabled [(M1032)](https://attack.mitre.org/mitigations/M1032/)
 
-### Firewall Rules
+### Firewall & Traffic Rules
 <details>
-  <summary>Rule 1</summary>
+  <summary>Firewall Rule 1</summary>
 Rule Name: Allow Established and Related Connections <br />
 Type: LAN In <br />
 Action: Accept <br />
@@ -80,7 +80,7 @@ States: Match State Established; Match State Related <br />
 </details>
 
 <details>
-  <summary>Rule 2</summary>
+  <summary>Firewall Rule 2</summary>
 Rule Name: Drop Invalid State <br />
 Type: LAN In <br />
 Action: Drop <br />
@@ -92,7 +92,7 @@ States: Match State Invalid <br />
 </details>
 
 <details>
-  <summary>Rule 3</summary>
+  <summary>Firewall Rule 3</summary>
 Rule Name: Allow LAN to Anywhere <br />
 Type: LAN In <br />
 Action: Accept <br />
@@ -103,7 +103,7 @@ Port: Any <br />
 </details>
 
 <details>
-  <summary>Rule 4</summary>
+  <summary>Firewall Rule 4</summary>
 Rule Name: Block inter-VLAN Traffic <br />
 Type: LAN In <br />
 Action: Drop <br />
@@ -113,9 +113,17 @@ Destination: RFC1918 Port/IP Group <br />
 Port: Any <br />
 </details>
 
+<details>
+  <summary>Traffic Rule 1</summary>
+Rule Name: Block Camera VLAN Internet <br />
+Action: Block <br />
+Source: VLAN40 <br />
+Destination: Internet <br />
+</details>
+
 ### Backup & Recovery
 #### Automated Backups
-For my network, I'm using the UniFi Controller automated system config backup solution on a weekly basis.
+For my network, I'm using the UniFi Controller automated system config backup solution on a weekly basis. [(M1053)](https://attack.mitre.org/mitigations/M1053/)
 
 ## Home Lab Architecture
 ### Value Proposition
