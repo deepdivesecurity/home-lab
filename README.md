@@ -140,9 +140,9 @@ The value of my home lab is that it creates an environment for me to conduct pra
 #### IAM
 - Default admin account disabled
 - Default guest account disabled
-- New admin account created with MFA
+- New admin account created with MFA [(M1032)](https://attack.mitre.org/mitigations/M1032/)
 - New regular user account, user1, w/ access to shared folder created
-- Password policy [(M1027)](https://attack.mitre.org/mitigations/M1027/):
+- Password policy: [(M1027)](https://attack.mitre.org/mitigations/M1027/)
   - Exclude name and description of user from password
   - Include mixed case
   - Include numeric characters
