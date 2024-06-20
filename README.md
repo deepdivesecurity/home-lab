@@ -19,7 +19,7 @@ This repo showcases my integrated home network, lab, security, and automation se
 ### Diagram
 **Figure 1.** <br />
 *Baseline home network diagram*
-![Baseline home network diagram](/assets/images/Baseline_H_Network.png)
+![Baseline home network diagram](/assets/images/baseline_home_network.png)
 Note. IP addresses omitted.
 
 ### Hardware
