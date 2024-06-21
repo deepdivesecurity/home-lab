@@ -42,7 +42,7 @@ Table 1. <br />
 | VLAN1: Personal Devices  | Trusted zone  | Personal computers & smartphones | --- |
 | VLAN20: Guest Devices  | Untrusted zone  | Guests' laptops, smartphones, & other devices | Guest network: enabled <br />Client device isolation: enabled |
 | VLAN30: IoT Devices  | Untrusted zone  | Smart TVs; smart hubs; smart plugs; smart lights; etc. | Isolate network: enabled |
-| VLAN40: Cameras  | Semi-trusted zone  | IP cameras; NVR | Isolate network: enabled <br />Allow internet access: disabled [(M1035)](https://attack.mitre.org/mitigations/M1035/) |
+| VLAN40: Cameras  | Semi-trusted zone  | IP cameras; NVR | Isolate network: enabled <br />Allow internet access: disabled (I also have a traffic rule blocking internet access) [(M1035)](https://attack.mitre.org/mitigations/M1035/) |
 | VLAN50: Home Lab  | Semi-trusted zone  | Mini-PC servers; network attached storage (NAS); etc. | --- |
 
 ### WiFi
@@ -93,6 +93,16 @@ States: Match State Invalid <br />
 
 <details>
   <summary>Firewall Rule 3</summary>
+Rule Name: Allow VPN to NVR <br />
+Type: LAN In <br />
+Action: Accept <br />
+Source: VPN subnet <br />
+Port: NVR port <br />
+Destination: VLAN40 <br />
+</details>
+
+<details>
+  <summary>Firewall Rule 4</summary>
 Rule Name: Allow LAN to Anywhere <br />
 Type: LAN In <br />
 Action: Accept <br />
@@ -103,7 +113,7 @@ Port: Any <br />
 </details>
 
 <details>
-  <summary>Firewall Rule 4</summary>
+  <summary>Firewall Rule 5</summary>
 Rule Name: Block inter-VLAN Traffic <br />
 Type: LAN In <br />
 Action: Drop <br />
