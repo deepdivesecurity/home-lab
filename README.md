@@ -214,14 +214,30 @@ Action: Allow <br />
 
 <details>
   <summary>Rule 2</summary>
-Ports: 445 <br />
+Ports: DSM (HTTPS) <br />
 Protocol: TCP <br />
-Source IP: VLAN1, VLAN50 <br />
+Source IP: VPN Client IP <br />
 Action: Allow <br />
 </details>
 
 <details>
   <summary>Rule 3</summary>
+Ports: 445 <br />
+Protocol: TCP <br />
+Source IP: VLAN1 <br />
+Action: Allow <br />
+</details>
+
+<details>
+  <summary>Rule 4</summary>
+Ports: 445 <br />
+Protocol: TCP <br />
+Source IP: VLAN50 <br />
+Action: Allow <br />
+</details>
+
+<details>
+  <summary>Rule 5</summary>
 Ports: All <br />
 Protocol: All <br />
 Source IP: All <br />
